@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background:
+    radial-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.678)),
+    url("photo-montagne.jpg") no-repeat center/cover;
+  height: 100vh; /* hauteur = 100% écran */
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold; /* gras */
+  color: orange;
+}
+nav a {
+  margin: 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+.search-box {
+  display: flex;
+}
+
+/* Champ input */
+.search-box input {
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+
+.search-box button {
+  padding: 8px;
+  background: orange;
+  border: none;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  margin-top: 80px;
+}
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .content {
+    margin-top: 50px;
+  }
+}
+.content {
+  max-width: 500px;
+}
+
+.content h1 {
+  font-size: 40px;
+}
+
+.content span {
+  color: orange;
+}
+
+.content p {
+  margin: 20px 0;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: orange;
+  border: none;
+  cursor: pointer;
+}
+
+.login-box {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Inputs login */
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+}
+
+/* Bouton login */
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background: orange;
+  border: none;
+  cursor: pointer;
+}
+
+.link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.link a {
+  color: orange;
+  text-decoration: none;
+}
